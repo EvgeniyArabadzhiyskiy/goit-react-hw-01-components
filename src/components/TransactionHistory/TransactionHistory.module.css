@@ -1,0 +1,24 @@
+
+.transaction__history{
+    
+    margin: 0 auto;
+    width: 700px;
+    border-collapse: collapse;
+}
+
+.transaction__row{
+    text-align: center;
+    
+}
+
+th{
+    color: rgb(240, 235, 235);
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(12, 138, 223); 
+}
+
+td{
+    padding: 10px;
+    border: 1px solid black;
+}
