@@ -1,15 +1,13 @@
 import stl from './Profile.module.css';
 import PropTypes from "prop-types";
 
-const Profile = ({ userData }) => {
-  const {
-    username,
-    avatar,
-    location,
-    stats: { followers, likes, views },
-    tag,
-  } = userData;
-
+const Profile = ({
+  username,
+  avatar,
+  location,
+  stats: { followers, likes, views },
+  tag,
+}) => {
   return (
     <div className={stl.profile__container}>
       <div className={stl.profile}>
@@ -40,18 +38,15 @@ const Profile = ({ userData }) => {
 };
 
 Profile.propTypes = {
-    userData: PropTypes.shape({
-        username: PropTypes.string.isRequired,
-        avatar: PropTypes.string.isRequired,
-        location: PropTypes.string.isRequired,
-        tag: PropTypes.string.isRequired,
-        stats: PropTypes.shape({
-            followers: PropTypes.number.isRequired,
-            likes: PropTypes.number.isRequired,
-            views: PropTypes.number.isRequired,
-        }),
-    }),
-
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+  }),
     
 }
 
